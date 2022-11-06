@@ -91,3 +91,11 @@
 # print(f"My best friend is {friendList[1]}")
 
 
+#######list 內methon用法
+# friend =["mike" , "john" , "nick" , "willson"]
+# friend.insert(1 , "admin")
+# print (friend)
+
+
+s = "string"
+print(len(s))
