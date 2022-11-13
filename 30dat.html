@@ -11,7 +11,7 @@
       .content {
         width: 400px;
         padding: 10px;
-        border: 1px dashed red;
+        border: 1px dashed gray;
         margin-top: 10px;
         margin-bottom: 10px;
       }
@@ -31,6 +31,12 @@
         background-color: #ffffff;
         padding: 5px;
       }
+      #btn:hover {
+        background-color: #888888;
+      }
+      input:focus {
+        border: 2px solid red;
+      }
     </style>
   </head>
   <body>
@@ -44,6 +50,9 @@
       <span class="keyword">鴿子</span>
       。
     </div>
-    <button id="btn">按鈕</button>
+    <div class="content">
+      <input type="text" />
+      <button id="btn">按鈕</button>
+    </div>
   </body>
 </html>
