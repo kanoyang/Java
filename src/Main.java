@@ -1,23 +1,35 @@
-import javax.swing.*;
-import java.text.DecimalFormat;
-import java.util.Date;
-import java.util.Scanner;
+    import javax.swing.*;
+    import java.awt.*;
+    import java.text.DecimalFormat;
+    import java.util.*;
+    public class Main {
 
-public class Main {
+        //編寫一個名為“printEvery3()”的函數，它打印出等差數列 1, 4, 7, …, 88。
+        public static void printEvery3(int i){
+            int start = 1;
+            System.out.println(start);
+            //i 進來(跑幾次)
+            //預設初始值int start = 1;
+            //for 包一個從0開始跑小魚i
+            // print start
+            //
+            for(int x =0;x<i;x++){
+                    start=start+3;
+                System.out.println(start);
 
-    public static void main(String[] args) {
-       String vaccine = JOptionPane.showInputDialog("請輸入疫苗名稱(選項包含 AZ,BNT,Moderna,janssen):");
-        vaccine =vaccine.toLowerCase();
-        if(vaccine.equals("az")){
-                JOptionPane.showMessageDialog(null,"AZ\n研發國:英國,瑞典\n疫苗類型:腸病毒疫苗\n劑量:2劑\n保護力:81%" );
-        } else if (vaccine.equals("bnt")) {
-            JOptionPane.showMessageDialog(null,"BNT\n研發國:得國,美國\n疫苗類型:mRNA\n劑量:2劑\n保護力:95%" );
-        } else if (vaccine.equals("mpderna")) {
-            JOptionPane.showMessageDialog(null,"Moderna\n研發國:得國,美國\n疫苗類型:mRNA\n劑量:2劑\n保護力:94%" );
-        } else if (vaccine.equals("janssen")) {
-            JOptionPane.showMessageDialog(null,"Janssen\n研發國:比利時,美國\n疫苗類型:腸病毒疫苗\n劑量:1劑\n保護力:66%" );
-        }else {
-            JOptionPane.showMessageDialog(null,"請重新輸入其他內容,並確認沒有空白鍵或中文字");
+            }
+
         }
+        public  static void main(String[] args){
+            Scanner scanner =new Scanner(System.in);
+            int putter = scanner.nextInt();
+            printEvery3(putter);
+
+        }
+
+
+
+
+
+
     }
-}
