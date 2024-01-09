@@ -28,14 +28,5 @@ public class multiplication_table {
 
         }
     }
-    public  static void main(String[] args){
-        Scanner scanner =new Scanner(System.in);
 
-        //printEvery3(putter);
-        System.out.println("請輸入第一位數字：");
-        int i = scanner.nextInt();
-        System.out.println("請輸入第二位數字：");
-        int j = scanner.nextInt();
-        ninetable(i,j);
-    }
 }
