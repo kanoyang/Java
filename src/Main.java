@@ -3,45 +3,23 @@
     import java.awt.*;
     import java.awt.event.KeyEvent;
     import java.awt.event.KeyListener;
+    import java.awt.event.MouseEvent;
+    import java.awt.event.MouseListener;
     import java.text.DecimalFormat;
     import java.util.*;
 
 
-    public class Main extends JPanel implements KeyListener{
-        public Main(){
-            addKeyListener(this);
-        }
+public class Main
+{
+    public static void main(String[] args) {
 
-        @Override
-        public void paintComponent(Graphics g){
-            requestFocusInWindow();
+        Creature c = new Monster("Dog");
+        ((Monster)c).cluck();
 
-        }
-
-        public static void main(String[] args) {
-
-        JFrame windows = new JFrame();
-        windows.setSize(500,500);
-        windows.setContentPane(new Main());
-        windows.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        windows.setVisible(true);
-
-
-        }
-
-        @Override
-        public void keyTyped(KeyEvent e) {
-
-        }
-
-        @Override
-        public void keyPressed(KeyEvent e) {
-            System.out.println(e.getKeyCode());
-
-        }
-
-        @Override
-        public void keyReleased(KeyEvent e) {
-
-        }
     }
+}
+
+
+
+
+
