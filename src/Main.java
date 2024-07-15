@@ -13,9 +13,6 @@ public class Main
 {
     public static void main(String[] args) {
 
-        Creature c = new Monster("Dog");
-        ((Monster)c).cluck();
-
     }
 }
 
