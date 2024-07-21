@@ -17,6 +17,15 @@ public class People {
         System.out.println("Sleeping ....");
     }
 
+    @Override
+    public boolean equals(Object p){
+        if(p instanceof People ) {
+            People person = (People) p;
+            return this.age == person.age;
+        }
+        return false;
+    }
+
 
 
 }
